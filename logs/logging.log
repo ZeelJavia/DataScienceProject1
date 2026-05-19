@@ -170,3 +170,429 @@ AttributeError: 'ConfigurationManager' object has no attribute 'extract_zip_file
 [2026-05-20 03:59:36,321]: INFO: common :created directory at: artifacts/data_validation 
 [2026-05-20 03:59:36,328]: INFO: data_validation_pipeline :Data validation status : True 
 [2026-05-20 03:59:36,329]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 04:34:56,424]: ERROR: 1315382610 :'ConfigurationManager' object has no attribute 'config' 
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Temp\ipykernel_39000\1315382610.py", line 3, in <module>
+    data_transformation_config = config.get_data_transformation_config()
+  File "C:\Users\Admin\AppData\Local\Temp\ipykernel_39000\261492537.py", line 20, in get_data_transformation_config
+    config = self.config.data_transformation
+             ^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'config'
+[2026-05-20 04:35:26,927]: ERROR: 1315382610 :'ConfigurationManager' object has no attribute 'config' 
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Temp\ipykernel_39000\1315382610.py", line 3, in <module>
+    data_transformation_config = config.get_data_transformation_config()
+  File "C:\Users\Admin\AppData\Local\Temp\ipykernel_39000\261492537.py", line 20, in get_data_transformation_config
+    config = self.config.data_transformation
+             ^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'config'
+[2026-05-20 04:36:51,898]: INFO: common :yaml file: config\config.yaml loaded successfully 
+[2026-05-20 04:36:51,899]: INFO: common :yaml file: params.yaml loaded successfully 
+[2026-05-20 04:36:51,902]: INFO: common :yaml file: schema.yaml loaded successfully 
+[2026-05-20 04:36:51,903]: INFO: common :created directory at: artifacts 
+[2026-05-20 04:36:58,794]: INFO: common :yaml file: config\config.yaml loaded successfully 
+[2026-05-20 04:36:58,796]: INFO: common :yaml file: params.yaml loaded successfully 
+[2026-05-20 04:36:58,797]: INFO: common :yaml file: schema.yaml loaded successfully 
+[2026-05-20 04:36:58,799]: INFO: common :created directory at: artifacts 
+[2026-05-20 04:36:58,800]: ERROR: 803507080 :"'ConfigBox' object has no attribute 'root_dir'" 
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'root_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'root_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'root_dir'. Did you mean: 'roct_dir'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'root_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'root_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'root_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'root_dir'. Did you mean: 'roct_dir'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Temp\ipykernel_39000\803507080.py", line 3, in <module>
+    data_transformation_config = config.get_data_transformation_config()
+  File "C:\Users\Admin\AppData\Local\Temp\ipykernel_39000\2333017457.py", line 17, in get_data_transformation_config
+    create_directories([config.root_dir])
+                        ^^^^^^^^^^^^^^^
+  File "box/config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'root_dir'". Did you mean: 'roct_dir'?
+[2026-05-20 04:38:56,148]: ERROR: 803507080 :'ConfigurationManager' object has no attribute 'config' 
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Temp\ipykernel_39000\803507080.py", line 3, in <module>
+    data_transformation_config = config.get_data_transformation_config()
+  File "C:\Users\Admin\AppData\Local\Temp\ipykernel_39000\3052464378.py", line 15, in get_data_transformation_config
+    config = self.config.data_transformation
+             ^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'config'
+[2026-05-20 04:39:53,201]: ERROR: 803507080 :'ConfigurationManager' object has no attribute 'config' 
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Temp\ipykernel_39000\803507080.py", line 3, in <module>
+    data_transformation_config = config.get_data_transformation_config()
+  File "C:\Users\Admin\AppData\Local\Temp\ipykernel_39000\2946570318.py", line 15, in get_data_transformation_config
+    config = self.config.data_transformation
+             ^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'config'
+[2026-05-20 04:41:04,677]: INFO: common :yaml file: config\config.yaml loaded successfully 
+[2026-05-20 04:41:04,678]: INFO: common :yaml file: params.yaml loaded successfully 
+[2026-05-20 04:41:04,680]: INFO: common :yaml file: schema.yaml loaded successfully 
+[2026-05-20 04:41:04,682]: INFO: common :created directory at: artifacts 
+[2026-05-20 04:41:04,682]: ERROR: 803507080 :"'ConfigBox' object has no attribute 'root_dir'" 
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'root_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'root_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'root_dir'. Did you mean: 'roct_dir'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'root_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'root_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'root_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'root_dir'. Did you mean: 'roct_dir'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Temp\ipykernel_39000\803507080.py", line 3, in <module>
+    data_transformation_config = config.get_data_transformation_config()
+  File "C:\Users\Admin\AppData\Local\Temp\ipykernel_39000\1909123618.py", line 17, in get_data_transformation_config
+    create_directories([config.root_dir])
+                        ^^^^^^^^^^^^^^^
+  File "box/config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'root_dir'". Did you mean: 'roct_dir'?
+[2026-05-20 04:42:04,751]: INFO: common :yaml file: config\config.yaml loaded successfully 
+[2026-05-20 04:42:04,752]: INFO: common :yaml file: params.yaml loaded successfully 
+[2026-05-20 04:42:04,754]: INFO: common :yaml file: schema.yaml loaded successfully 
+[2026-05-20 04:42:04,755]: INFO: common :created directory at: artifacts 
+[2026-05-20 04:42:04,756]: ERROR: 803507080 :"'ConfigBox' object has no attribute 'root_dir'" 
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'root_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'root_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'root_dir'. Did you mean: 'roct_dir'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'root_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'root_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'root_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'root_dir'. Did you mean: 'roct_dir'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Temp\ipykernel_39000\803507080.py", line 3, in <module>
+    data_transformation_config = config.get_data_transformation_config()
+  File "C:\Users\Admin\AppData\Local\Temp\ipykernel_39000\1909123618.py", line 17, in get_data_transformation_config
+    create_directories([config.root_dir])
+                        ^^^^^^^^^^^^^^^
+  File "box/config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'root_dir'". Did you mean: 'roct_dir'?
+[2026-05-20 04:42:55,731]: INFO: common :yaml file: config\config.yaml loaded successfully 
+[2026-05-20 04:42:55,732]: INFO: common :yaml file: params.yaml loaded successfully 
+[2026-05-20 04:42:55,735]: INFO: common :yaml file: schema.yaml loaded successfully 
+[2026-05-20 04:42:55,736]: INFO: common :created directory at: artifacts 
+[2026-05-20 04:42:55,736]: INFO: common :created directory at: artifacts/data_transformation 
+[2026-05-20 04:42:55,757]: INFO: 2897720155 :Splited data into training and test sets 
+[2026-05-20 04:42:55,758]: INFO: 2897720155 :(1199, 12) 
+[2026-05-20 04:42:55,759]: INFO: 2897720155 :(400, 12) 
+[2026-05-20 04:53:05,001]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingetion Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 04:53:05,002]: INFO: common :yaml file: config\config.yaml loaded successfully 
+[2026-05-20 04:53:05,003]: INFO: common :yaml file: params.yaml loaded successfully 
+[2026-05-20 04:53:05,003]: INFO: common :yaml file: schema.yaml loaded successfully 
+[2026-05-20 04:53:05,004]: INFO: common :created directory at: artifacts 
+[2026-05-20 04:53:05,004]: INFO: common :created directory at: artifacts/data_ingestion 
+[2026-05-20 04:53:05,004]: ERROR: main :'ConfigurationManager' object has no attribute 'extract_zip_file' 
+Traceback (most recent call last):
+  File "D:\MLOPS\Projects\DataScienceProject1\main.py", line 11, in <module>
+    data_ingetion.initiate_data_ingestion()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\MLOPS\Projects\DataScienceProject1\src\DataScienceProject\pipeline\data_ingetion_pipeline.py", line 16, in initiate_data_ingestion
+    config.extract_zip_file( zip_file_path=data_ingestion_config.local_data_file , unzip_dir=data_ingestion_config.unzip_dir)
+    ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'extract_zip_file'
+[2026-05-20 04:53:05,005]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 04:53:05,006]: INFO: common :yaml file: config\config.yaml loaded successfully 
+[2026-05-20 04:53:05,006]: INFO: common :yaml file: params.yaml loaded successfully 
+[2026-05-20 04:53:05,007]: INFO: common :yaml file: schema.yaml loaded successfully 
+[2026-05-20 04:53:05,007]: INFO: common :created directory at: artifacts 
+[2026-05-20 04:53:05,008]: INFO: common :created directory at: artifacts/data_validation 
+[2026-05-20 04:53:05,015]: INFO: data_validation_pipeline :Data validation status : True 
+[2026-05-20 04:53:05,015]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 04:53:05,015]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Transformation Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 04:53:05,015]: ERROR: main :name 'Path' is not defined 
+Traceback (most recent call last):
+  File "D:\MLOPS\Projects\DataScienceProject1\main.py", line 31, in <module>
+    data_transformation.initiate_data_transformation()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\MLOPS\Projects\DataScienceProject1\src\DataScienceProject\pipeline\data_transformation_pipeline.py", line 27, in initiate_data_transformation
+    raise e
+  File "D:\MLOPS\Projects\DataScienceProject1\src\DataScienceProject\pipeline\data_transformation_pipeline.py", line 15, in initiate_data_transformation
+    with open(Path("artifacts/data_validation/status.txt" , "r")) as f:
+              ^^^^
+NameError: name 'Path' is not defined
+[2026-05-20 04:53:55,806]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingetion Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 04:53:55,807]: INFO: common :yaml file: config\config.yaml loaded successfully 
+[2026-05-20 04:53:55,807]: INFO: common :yaml file: params.yaml loaded successfully 
+[2026-05-20 04:53:55,808]: INFO: common :yaml file: schema.yaml loaded successfully 
+[2026-05-20 04:53:55,808]: INFO: common :created directory at: artifacts 
+[2026-05-20 04:53:55,808]: INFO: common :created directory at: artifacts/data_ingestion 
+[2026-05-20 04:53:55,809]: ERROR: main :'ConfigurationManager' object has no attribute 'extract_zip_file' 
+Traceback (most recent call last):
+  File "D:\MLOPS\Projects\DataScienceProject1\main.py", line 11, in <module>
+    data_ingetion.initiate_data_ingestion()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\MLOPS\Projects\DataScienceProject1\src\DataScienceProject\pipeline\data_ingetion_pipeline.py", line 16, in initiate_data_ingestion
+    config.extract_zip_file( zip_file_path=data_ingestion_config.local_data_file , unzip_dir=data_ingestion_config.unzip_dir)
+    ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'extract_zip_file'
+[2026-05-20 04:53:55,810]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 04:53:55,810]: INFO: common :yaml file: config\config.yaml loaded successfully 
+[2026-05-20 04:53:55,811]: INFO: common :yaml file: params.yaml loaded successfully 
+[2026-05-20 04:53:55,812]: INFO: common :yaml file: schema.yaml loaded successfully 
+[2026-05-20 04:53:55,812]: INFO: common :created directory at: artifacts 
+[2026-05-20 04:53:55,813]: INFO: common :created directory at: artifacts/data_validation 
+[2026-05-20 04:53:55,819]: INFO: data_validation_pipeline :Data validation status : True 
+[2026-05-20 04:53:55,819]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 04:53:55,820]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Transformation Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 04:53:55,820]: ERROR: main :[Errno 2] No such file or directory: 'artifacts\\data_validation\\status.txt\\r' 
+Traceback (most recent call last):
+  File "D:\MLOPS\Projects\DataScienceProject1\main.py", line 31, in <module>
+    data_transformation.initiate_data_transformation()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\MLOPS\Projects\DataScienceProject1\src\DataScienceProject\pipeline\data_transformation_pipeline.py", line 27, in initiate_data_transformation
+    raise e
+  File "D:\MLOPS\Projects\DataScienceProject1\src\DataScienceProject\pipeline\data_transformation_pipeline.py", line 15, in initiate_data_transformation
+    with open(Path("artifacts/data_validation/status.txt" , "r")) as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\data_validation\\status.txt\\r'
+[2026-05-20 04:54:21,684]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingetion Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 04:54:21,685]: INFO: common :yaml file: config\config.yaml loaded successfully 
+[2026-05-20 04:54:21,685]: INFO: common :yaml file: params.yaml loaded successfully 
+[2026-05-20 04:54:21,686]: INFO: common :yaml file: schema.yaml loaded successfully 
+[2026-05-20 04:54:21,686]: INFO: common :created directory at: artifacts 
+[2026-05-20 04:54:21,687]: INFO: common :created directory at: artifacts/data_ingestion 
+[2026-05-20 04:54:21,687]: ERROR: main :'ConfigurationManager' object has no attribute 'extract_zip_file' 
+Traceback (most recent call last):
+  File "D:\MLOPS\Projects\DataScienceProject1\main.py", line 11, in <module>
+    data_ingetion.initiate_data_ingestion()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\MLOPS\Projects\DataScienceProject1\src\DataScienceProject\pipeline\data_ingetion_pipeline.py", line 16, in initiate_data_ingestion
+    config.extract_zip_file( zip_file_path=data_ingestion_config.local_data_file , unzip_dir=data_ingestion_config.unzip_dir)
+    ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'extract_zip_file'
+[2026-05-20 04:54:21,688]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 04:54:21,689]: INFO: common :yaml file: config\config.yaml loaded successfully 
+[2026-05-20 04:54:21,690]: INFO: common :yaml file: params.yaml loaded successfully 
+[2026-05-20 04:54:21,691]: INFO: common :yaml file: schema.yaml loaded successfully 
+[2026-05-20 04:54:21,692]: INFO: common :created directory at: artifacts 
+[2026-05-20 04:54:21,692]: INFO: common :created directory at: artifacts/data_validation 
+[2026-05-20 04:54:21,699]: INFO: data_validation_pipeline :Data validation status : True 
+[2026-05-20 04:54:21,700]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 04:54:21,700]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Transformation Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 04:54:21,701]: INFO: data_transformation_pipeline :YOur schema is not valid. 
+[2026-05-20 04:54:21,701]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Transformation Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 04:55:58,820]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingetion Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 04:55:58,821]: INFO: common :yaml file: config\config.yaml loaded successfully 
+[2026-05-20 04:55:58,822]: INFO: common :yaml file: params.yaml loaded successfully 
+[2026-05-20 04:55:58,823]: INFO: common :yaml file: schema.yaml loaded successfully 
+[2026-05-20 04:55:58,823]: INFO: common :created directory at: artifacts 
+[2026-05-20 04:55:58,823]: INFO: common :created directory at: artifacts/data_ingestion 
+[2026-05-20 04:55:58,826]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingetion Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 04:55:58,826]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 04:55:58,827]: INFO: common :yaml file: config\config.yaml loaded successfully 
+[2026-05-20 04:55:58,827]: INFO: common :yaml file: params.yaml loaded successfully 
+[2026-05-20 04:55:58,828]: INFO: common :yaml file: schema.yaml loaded successfully 
+[2026-05-20 04:55:58,828]: INFO: common :created directory at: artifacts 
+[2026-05-20 04:55:58,828]: INFO: common :created directory at: artifacts/data_validation 
+[2026-05-20 04:55:58,856]: INFO: data_validation_pipeline :Data validation status : True 
+[2026-05-20 04:55:58,856]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 04:55:58,856]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Transformation Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 04:55:58,857]: INFO: data_transformation_pipeline :YOur schema is not valid. 
+[2026-05-20 04:55:58,858]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Transformation Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 04:56:12,981]: INFO: common :yaml file: config\config.yaml loaded successfully 
+[2026-05-20 04:56:12,983]: INFO: common :yaml file: params.yaml loaded successfully 
+[2026-05-20 04:56:12,985]: INFO: common :yaml file: schema.yaml loaded successfully 
+[2026-05-20 04:56:12,986]: INFO: common :created directory at: artifacts 
+[2026-05-20 04:56:12,988]: INFO: common :created directory at: artifacts/data_transformation 
+[2026-05-20 04:56:13,001]: INFO: 2897720155 :Splited data into training and test sets 
+[2026-05-20 04:56:13,002]: INFO: 2897720155 :(1199, 12) 
+[2026-05-20 04:56:13,003]: INFO: 2897720155 :(400, 12) 
+[2026-05-20 04:57:12,548]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingetion Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 04:57:12,549]: INFO: common :yaml file: config\config.yaml loaded successfully 
+[2026-05-20 04:57:12,549]: INFO: common :yaml file: params.yaml loaded successfully 
+[2026-05-20 04:57:12,550]: INFO: common :yaml file: schema.yaml loaded successfully 
+[2026-05-20 04:57:12,551]: INFO: common :created directory at: artifacts 
+[2026-05-20 04:57:12,551]: INFO: common :created directory at: artifacts/data_ingestion 
+[2026-05-20 04:57:12,552]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingetion Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 04:57:12,552]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 04:57:12,553]: INFO: common :yaml file: config\config.yaml loaded successfully 
+[2026-05-20 04:57:12,554]: INFO: common :yaml file: params.yaml loaded successfully 
+[2026-05-20 04:57:12,555]: INFO: common :yaml file: schema.yaml loaded successfully 
+[2026-05-20 04:57:12,556]: INFO: common :created directory at: artifacts 
+[2026-05-20 04:57:12,556]: INFO: common :created directory at: artifacts/data_validation 
+[2026-05-20 04:57:12,585]: INFO: data_validation_pipeline :Data validation status : True 
+[2026-05-20 04:57:12,585]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 04:57:12,585]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Transformation Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 04:57:12,586]: INFO: data_transformation_pipeline :YOur schema is not valid. 
+[2026-05-20 04:57:12,586]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Transformation Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 04:58:26,009]: INFO: 876518159 :YOur schema is not valid. 
+[2026-05-20 04:59:12,334]: INFO: 2687731771 :YOur schema is not valid. 
+[2026-05-20 05:00:20,717]: INFO: 2763189012 :Data validation is completed successfully. Starting data transformation 
+[2026-05-20 05:00:20,719]: INFO: common :yaml file: config\config.yaml loaded successfully 
+[2026-05-20 05:00:20,721]: INFO: common :yaml file: params.yaml loaded successfully 
+[2026-05-20 05:00:20,723]: INFO: common :yaml file: schema.yaml loaded successfully 
+[2026-05-20 05:00:20,724]: INFO: common :created directory at: artifacts 
+[2026-05-20 05:00:20,725]: INFO: common :created directory at: artifacts/data_transformation 
+[2026-05-20 05:00:20,738]: INFO: 2897720155 :Splited data into training and test sets 
+[2026-05-20 05:00:20,739]: INFO: 2897720155 :(1199, 12) 
+[2026-05-20 05:00:20,739]: INFO: 2897720155 :(400, 12) 
+[2026-05-20 05:00:48,178]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingetion Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 05:00:48,180]: INFO: common :yaml file: config\config.yaml loaded successfully 
+[2026-05-20 05:00:48,181]: INFO: common :yaml file: params.yaml loaded successfully 
+[2026-05-20 05:00:48,182]: INFO: common :yaml file: schema.yaml loaded successfully 
+[2026-05-20 05:00:48,183]: INFO: common :created directory at: artifacts 
+[2026-05-20 05:00:48,184]: INFO: common :created directory at: artifacts/data_ingestion 
+[2026-05-20 05:00:48,186]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingetion Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 05:00:48,186]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 05:00:48,188]: INFO: common :yaml file: config\config.yaml loaded successfully 
+[2026-05-20 05:00:48,189]: INFO: common :yaml file: params.yaml loaded successfully 
+[2026-05-20 05:00:48,191]: INFO: common :yaml file: schema.yaml loaded successfully 
+[2026-05-20 05:00:48,192]: INFO: common :created directory at: artifacts 
+[2026-05-20 05:00:48,192]: INFO: common :created directory at: artifacts/data_validation 
+[2026-05-20 05:00:48,214]: INFO: data_validation_pipeline :Data validation status : True 
+[2026-05-20 05:00:48,214]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 05:00:48,214]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Transformation Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 05:00:48,217]: INFO: data_transformation_pipeline :YOur schema is not valid. 
+[2026-05-20 05:00:48,217]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Transformation Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 05:01:13,722]: INFO: 2763189012 :YOur schema is not valid. 
+[2026-05-20 05:01:37,277]: INFO: 3312685024 :Data validation is completed successfully. Starting data transformation 
+[2026-05-20 05:01:37,279]: INFO: common :yaml file: config\config.yaml loaded successfully 
+[2026-05-20 05:01:37,280]: INFO: common :yaml file: params.yaml loaded successfully 
+[2026-05-20 05:01:37,283]: INFO: common :yaml file: schema.yaml loaded successfully 
+[2026-05-20 05:01:37,284]: INFO: common :created directory at: artifacts 
+[2026-05-20 05:01:37,285]: INFO: common :created directory at: artifacts/data_transformation 
+[2026-05-20 05:01:37,298]: INFO: 2897720155 :Splited data into training and test sets 
+[2026-05-20 05:01:37,298]: INFO: 2897720155 :(1199, 12) 
+[2026-05-20 05:01:37,299]: INFO: 2897720155 :(400, 12) 
+[2026-05-20 05:01:53,935]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingetion Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 05:01:53,936]: INFO: common :yaml file: config\config.yaml loaded successfully 
+[2026-05-20 05:01:53,936]: INFO: common :yaml file: params.yaml loaded successfully 
+[2026-05-20 05:01:53,937]: INFO: common :yaml file: schema.yaml loaded successfully 
+[2026-05-20 05:01:53,938]: INFO: common :created directory at: artifacts 
+[2026-05-20 05:01:53,938]: INFO: common :created directory at: artifacts/data_ingestion 
+[2026-05-20 05:01:53,939]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingetion Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 05:01:53,939]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 05:01:53,940]: INFO: common :yaml file: config\config.yaml loaded successfully 
+[2026-05-20 05:01:53,940]: INFO: common :yaml file: params.yaml loaded successfully 
+[2026-05-20 05:01:53,941]: INFO: common :yaml file: schema.yaml loaded successfully 
+[2026-05-20 05:01:53,941]: INFO: common :created directory at: artifacts 
+[2026-05-20 05:01:53,941]: INFO: common :created directory at: artifacts/data_validation 
+[2026-05-20 05:01:53,963]: INFO: data_validation_pipeline :Data validation status : True 
+[2026-05-20 05:01:53,963]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 05:01:53,963]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Transformation Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 05:01:53,976]: INFO: data_transformation_pipeline :Data validation is completed successfully. Starting data transformation 
+[2026-05-20 05:01:53,977]: INFO: common :yaml file: config\config.yaml loaded successfully 
+[2026-05-20 05:01:53,978]: INFO: common :yaml file: params.yaml loaded successfully 
+[2026-05-20 05:01:53,979]: INFO: common :yaml file: schema.yaml loaded successfully 
+[2026-05-20 05:01:53,979]: INFO: common :created directory at: artifacts 
+[2026-05-20 05:01:53,980]: INFO: common :created directory at: artifacts/data_transformation 
+[2026-05-20 05:01:53,993]: INFO: data_transformation :Splited data into training and test sets 
+[2026-05-20 05:01:53,993]: INFO: data_transformation :(1199, 12) 
+[2026-05-20 05:01:53,993]: INFO: data_transformation :(400, 12) 
+[2026-05-20 05:01:53,993]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Transformation Stage <<<<<<<<<<<<<<<<<<<< 

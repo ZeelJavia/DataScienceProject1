@@ -13,7 +13,7 @@ class DataIngetionTrainingPipeline:
       data_ingestion_config = config.data_ingestion_config()
       data_ingestion = DataIngetion(config=data_ingestion_config)
       data_ingestion.download_self()
-      config.extract_zip_file( zip_file_path=data_ingestion_config.local_data_file , unzip_dir=data_ingestion_config.unzip_dir)
+      data_ingestion.extract_zip_file( zip_file_path=data_ingestion_config.local_data_file , unzip_dir=data_ingestion_config.unzip_dir)
 
 if __name__ == "__main__":
   try:
