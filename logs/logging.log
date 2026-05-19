@@ -119,3 +119,54 @@ TypeError: ConfigurationManager.extract_zip_file() missing 2 required positional
 [2026-05-20 03:19:58,561]: INFO: common :created directory at: artifacts 
 [2026-05-20 03:19:58,561]: INFO: common :created directory at: artifacts/data_ingestion 
 [2026-05-20 03:19:58,579]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingetion Stage <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 03:45:26,149]: INFO: common :yaml file: config\config.yaml loaded successfully 
+[2026-05-20 03:45:26,151]: INFO: common :yaml file: params.yaml loaded successfully 
+[2026-05-20 03:45:26,160]: INFO: common :yaml file: schema.yaml loaded successfully 
+[2026-05-20 03:45:26,163]: INFO: common :created directory at: artifacts 
+[2026-05-20 03:45:26,164]: INFO: common :created directory at: artifacts/data_validation 
+[2026-05-20 03:59:16,079]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingetion Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 03:59:16,080]: INFO: common :yaml file: config\config.yaml loaded successfully 
+[2026-05-20 03:59:16,081]: INFO: common :yaml file: params.yaml loaded successfully 
+[2026-05-20 03:59:16,083]: INFO: common :yaml file: schema.yaml loaded successfully 
+[2026-05-20 03:59:16,083]: INFO: common :created directory at: artifacts 
+[2026-05-20 03:59:16,084]: INFO: common :created directory at: artifacts/data_ingestion 
+[2026-05-20 03:59:16,084]: ERROR: main :'ConfigurationManager' object has no attribute 'extract_zip_file' 
+Traceback (most recent call last):
+  File "D:\MLOPS\Projects\DataScienceProject1\main.py", line 10, in <module>
+    data_ingetion.initiate_data_ingestion()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\MLOPS\Projects\DataScienceProject1\src\DataScienceProject\pipeline\data_ingetion_pipeline.py", line 16, in initiate_data_ingestion
+    config.extract_zip_file( zip_file_path=data_ingestion_config.local_data_file , unzip_dir=data_ingestion_config.unzip_dir)
+    ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'extract_zip_file'
+[2026-05-20 03:59:16,086]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingetion Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 03:59:16,087]: INFO: common :yaml file: config\config.yaml loaded successfully 
+[2026-05-20 03:59:16,088]: INFO: common :yaml file: params.yaml loaded successfully 
+[2026-05-20 03:59:16,089]: INFO: common :yaml file: schema.yaml loaded successfully 
+[2026-05-20 03:59:16,090]: INFO: common :created directory at: artifacts 
+[2026-05-20 03:59:16,091]: INFO: common :created directory at: artifacts/data_validation 
+[2026-05-20 03:59:16,102]: INFO: data_validation_pipeline :Data validation status : True 
+[2026-05-20 03:59:16,102]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingetion Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 03:59:36,314]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingetion Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 03:59:36,314]: INFO: common :yaml file: config\config.yaml loaded successfully 
+[2026-05-20 03:59:36,315]: INFO: common :yaml file: params.yaml loaded successfully 
+[2026-05-20 03:59:36,316]: INFO: common :yaml file: schema.yaml loaded successfully 
+[2026-05-20 03:59:36,316]: INFO: common :created directory at: artifacts 
+[2026-05-20 03:59:36,317]: INFO: common :created directory at: artifacts/data_ingestion 
+[2026-05-20 03:59:36,317]: ERROR: main :'ConfigurationManager' object has no attribute 'extract_zip_file' 
+Traceback (most recent call last):
+  File "D:\MLOPS\Projects\DataScienceProject1\main.py", line 10, in <module>
+    data_ingetion.initiate_data_ingestion()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\MLOPS\Projects\DataScienceProject1\src\DataScienceProject\pipeline\data_ingetion_pipeline.py", line 16, in initiate_data_ingestion
+    config.extract_zip_file( zip_file_path=data_ingestion_config.local_data_file , unzip_dir=data_ingestion_config.unzip_dir)
+    ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'extract_zip_file'
+[2026-05-20 03:59:36,318]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation Stage <<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 03:59:36,319]: INFO: common :yaml file: config\config.yaml loaded successfully 
+[2026-05-20 03:59:36,319]: INFO: common :yaml file: params.yaml loaded successfully 
+[2026-05-20 03:59:36,320]: INFO: common :yaml file: schema.yaml loaded successfully 
+[2026-05-20 03:59:36,321]: INFO: common :created directory at: artifacts 
+[2026-05-20 03:59:36,321]: INFO: common :created directory at: artifacts/data_validation 
+[2026-05-20 03:59:36,328]: INFO: data_validation_pipeline :Data validation status : True 
+[2026-05-20 03:59:36,329]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation Stage <<<<<<<<<<<<<<<<<<<< 

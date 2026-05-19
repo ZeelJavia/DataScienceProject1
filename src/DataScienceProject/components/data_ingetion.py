@@ -19,3 +19,7 @@ class DataIngetion:
     else:
       print(f"File already exists of path {self.config.local_data_file}")
   
+  def extract_zip_file(self , zip_file_path:Path , unzip_dir:Path):
+    with zipfile.ZipFile(zip_file_path , 'r') as zip_ref:
+      zip_ref.extractall(unzip_dir)
+  
