@@ -1,2 +1,121 @@
 [2026-05-19 23:13:52,522]: INFO: main :welcome to our custom logging datascience: 
 [2026-05-19 23:14:22,392]: INFO: main :welcome to our custom logging datascience 
+[2026-05-20 01:49:19,191]: INFO: common :yaml file: config\config.yaml loaded successfully 
+[2026-05-20 01:49:19,197]: INFO: common :yaml file: params.yaml loaded successfully 
+[2026-05-20 01:49:19,199]: INFO: common :yaml file: schema.yaml loaded successfully 
+[2026-05-20 01:49:19,200]: INFO: common :created directory at: artifacts 
+[2026-05-20 01:49:19,201]: INFO: common :created directory at: artifacts/data_ingestion 
+[2026-05-20 01:49:21,131]: ERROR: 2333900347 :HTTP Error 404: Not Found 
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Temp\ipykernel_41176\2333900347.py", line 5, in <module>
+    data_ingestion.download_self()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Local\Temp\ipykernel_41176\2938457850.py", line 8, in download_self
+    filename , headers = request.urlretrieve(url=self.config.source_URL , filename=self.config.local_data_file)
+                         ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 214, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+                            ~~~~~~~^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 495, in open
+    response = meth(req, response)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 604, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 527, in error
+    result = self._call_chain(*args)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 466, in _call_chain
+    result = func(*args)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 720, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 495, in open
+    response = meth(req, response)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 604, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 533, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 466, in _call_chain
+    result = func(*args)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 613, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+[2026-05-20 01:51:51,874]: INFO: common :yaml file: config\config.yaml loaded successfully 
+[2026-05-20 01:51:51,875]: INFO: common :yaml file: params.yaml loaded successfully 
+[2026-05-20 01:51:51,876]: INFO: common :yaml file: schema.yaml loaded successfully 
+[2026-05-20 01:51:51,877]: INFO: common :created directory at: artifacts 
+[2026-05-20 01:51:51,878]: INFO: common :created directory at: artifacts/data_ingestion 
+[2026-05-20 01:51:52,979]: INFO: 2938457850 :File is downloaded at location artifacts/data_ingestion/data.zip with info Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 840A:4E23F:1BDA24:418F44:6A0CC660
+Accept-Ranges: bytes
+Date: Tue, 19 May 2026 20:21:53 GMT
+Via: 1.1 varnish
+X-Served-By: cache-bom-vanm7210036-BOM
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1779222113.464895,VS0,VE267
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 5312478e9f2e57a39902575195d93a2afdba51e3
+Expires: Tue, 19 May 2026 20:26:53 GMT
+Source-Age: 0
+
+ 
+[2026-05-20 01:51:52,980]: ERROR: 2333900347 :'ConfigurationManager' object has no attribute 'extract_zip_file' 
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Temp\ipykernel_41176\2333900347.py", line 6, in <module>
+    config.extract_zip_file(zip_file_path=data_ingestion_config.local_data_file , unzip_dir=data_ingestion_config.unzip_dir)
+    ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'extract_zip_file'
+[2026-05-20 01:54:49,462]: INFO: common :yaml file: config\config.yaml loaded successfully 
+[2026-05-20 01:54:49,464]: INFO: common :yaml file: params.yaml loaded successfully 
+[2026-05-20 01:54:49,465]: INFO: common :yaml file: schema.yaml loaded successfully 
+[2026-05-20 01:54:49,466]: INFO: common :created directory at: artifacts 
+[2026-05-20 01:54:49,467]: INFO: common :created directory at: artifacts/data_ingestion 
+[2026-05-20 01:54:49,468]: ERROR: 2431144775 :'DataIngestionConfig' object has no attribute 'extract_zip_file' 
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Temp\ipykernel_41176\2431144775.py", line 6, in <module>
+    data_ingestion.config.extract_zip_file(zip_file_path=data_ingestion_config.local_data_file , unzip_dir=data_ingestion_config.unzip_dir)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataIngestionConfig' object has no attribute 'extract_zip_file'
+[2026-05-20 01:55:47,688]: INFO: common :yaml file: config\config.yaml loaded successfully 
+[2026-05-20 01:55:47,689]: INFO: common :yaml file: params.yaml loaded successfully 
+[2026-05-20 01:55:47,691]: INFO: common :yaml file: schema.yaml loaded successfully 
+[2026-05-20 01:55:47,692]: INFO: common :created directory at: artifacts 
+[2026-05-20 01:55:47,693]: INFO: common :created directory at: artifacts/data_ingestion 
+[2026-05-20 03:18:28,829]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingetion Stage <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 03:18:28,831]: INFO: common :yaml file: config\config.yaml loaded successfully 
+[2026-05-20 03:18:28,833]: INFO: common :yaml file: params.yaml loaded successfully 
+[2026-05-20 03:18:28,835]: INFO: common :yaml file: schema.yaml loaded successfully 
+[2026-05-20 03:18:28,835]: INFO: common :created directory at: artifacts 
+[2026-05-20 03:18:28,835]: INFO: common :created directory at: artifacts/data_ingestion 
+[2026-05-20 03:18:28,835]: ERROR: main :ConfigurationManager.extract_zip_file() missing 2 required positional arguments: 'zip_file_path' and 'unzip_dir' 
+Traceback (most recent call last):
+  File "D:\MLOPS\Projects\DataScienceProject1\main.py", line 9, in <module>
+    data_ingetion.initiate_data_ingestion()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\MLOPS\Projects\DataScienceProject1\src\DataScienceProject\pipeline\data_ingetion_pipeline.py", line 16, in initiate_data_ingestion
+    config.extract_zip_file()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+TypeError: ConfigurationManager.extract_zip_file() missing 2 required positional arguments: 'zip_file_path' and 'unzip_dir'
+[2026-05-20 03:19:58,558]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingetion Stage <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+[2026-05-20 03:19:58,559]: INFO: common :yaml file: config\config.yaml loaded successfully 
+[2026-05-20 03:19:58,559]: INFO: common :yaml file: params.yaml loaded successfully 
+[2026-05-20 03:19:58,560]: INFO: common :yaml file: schema.yaml loaded successfully 
+[2026-05-20 03:19:58,561]: INFO: common :created directory at: artifacts 
+[2026-05-20 03:19:58,561]: INFO: common :created directory at: artifacts/data_ingestion 
+[2026-05-20 03:19:58,579]: INFO: main :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingetion Stage <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
