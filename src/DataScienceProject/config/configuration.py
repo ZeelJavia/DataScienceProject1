@@ -1,8 +1,12 @@
 from src.DataScienceProject.constants import *
 from src.DataScienceProject.utils.common import read_yaml , create_directories
 import zipfile
-from src.DataScienceProject.entity.config_entity import (DataIngestionConfig, DataTransformationConfig, ModelTrainerConfig)
+from src.DataScienceProject.entity.config_entity import (DataIngestionConfig, DataTransformationConfig, ModelEvaluationConfig, ModelTrainerConfig)
 from src.DataScienceProject.entity.config_entity import (DataValidationConfig) 
+import os
+os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/zeeljavia123/DataScienceProject1.mlflow"
+os.environ["MLFLOW_TRACKING_USERNAME"]="zeeljavia123"
+os. environ["MLFLOW_TRACKING_PASSWORD"]="0541d252d57eb03417c366d02c2b97ad879333ef"
 class ConfigurationManager:
   
   def __init__(self , config_filepath=CONFIG_FILE_PATH , params_filepath=PARAMS_FILE_PATH , schema_filepath=SCHEMA_FILE_PATH):
@@ -67,3 +71,23 @@ class ConfigurationManager:
     )
 
     return model_trainer_config
+  
+  def get_model_evaluation_config(self) -> ModelEvaluationConfig:
+    config = self.config.model_evaluation
+    params = self.params.ElasticNet
+    schema = self.schema.TARGET_COLUMN
+    
+    create_directories([config.root_dir])
+
+    model_evaluation_config = ModelEvaluationConfig(
+      root_dir = Path(config.root_dir),
+      test_data_path = Path(config.test_data_path),
+      model_path = Path(config.model_path),
+      all_params = params,
+      metric_file_name = Path(config.metric_file_name),
+      target_column = schema.name,
+      mlflow_uri ='https://dagshub.com/zeeljavia123/DataScienceProject1.mlflow'
+      
+    )
+
+    return model_evaluation_config
