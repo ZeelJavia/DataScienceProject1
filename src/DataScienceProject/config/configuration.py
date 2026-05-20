@@ -3,10 +3,7 @@ from src.DataScienceProject.utils.common import read_yaml , create_directories
 import zipfile
 from src.DataScienceProject.entity.config_entity import (DataIngestionConfig, DataTransformationConfig, ModelEvaluationConfig, ModelTrainerConfig)
 from src.DataScienceProject.entity.config_entity import (DataValidationConfig) 
-import os
-os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/zeeljavia123/DataScienceProject1.mlflow"
-os.environ["MLFLOW_TRACKING_USERNAME"]="zeeljavia123"
-os. environ["MLFLOW_TRACKING_PASSWORD"]="0541d252d57eb03417c366d02c2b97ad879333ef"
+
 class ConfigurationManager:
   
   def __init__(self , config_filepath=CONFIG_FILE_PATH , params_filepath=PARAMS_FILE_PATH , schema_filepath=SCHEMA_FILE_PATH):

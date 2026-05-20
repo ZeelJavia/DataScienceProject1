@@ -11,7 +11,10 @@ from src.DataScienceProject.entity.config_entity import ModelEvaluationConfig
 from src.DataScienceProject.config.configuration import ConfigurationManager
 from pathlib import Path
 from src.DataScienceProject.entity.config_entity import ModelEvaluationConfig
-
+import os
+os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/zeeljavia123/DataScienceProject1.mlflow"
+os.environ["MLFLOW_TRACKING_USERNAME"]="zeeljavia123"
+os. environ["MLFLOW_TRACKING_PASSWORD"]="0541d252d57eb03417c366d02c2b97ad879333ef"
 
 class ModelEvaluation:
   def __init__(self, config: ModelEvaluationConfig):
